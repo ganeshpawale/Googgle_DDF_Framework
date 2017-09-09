@@ -50,7 +50,7 @@ public class TC_001 extends Test_Core{
 		
 			flag_google_lucky_btn=isElementPresent(By.xpath(object.getProperty("flag_google_lucky_btn_rs")));
 			
-		
+			System.out.println("Demo");
 			if(flag_Sign_in_btn){
 			
 				System.out.println("Sign in button is present on web page");
