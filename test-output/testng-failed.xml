@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="DD_Test.TC_014">
+      <class name="DD_Test.Demo">
         <methods>
-          <include name="google_Language" invocation-numbers="0"/>
           <include name="closeBrowser"/>
-          <include name="isSkip"/>
+          <include name="google_Language" invocation-numbers="0"/>
           <include name="init"/>
         </methods>
-      </class> <!-- DD_Test.TC_014 -->
+      </class> <!-- DD_Test.Demo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

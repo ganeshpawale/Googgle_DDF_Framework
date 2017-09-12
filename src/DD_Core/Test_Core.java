@@ -44,7 +44,7 @@ public class Test_Core {
 	public static WebDriver driver=null;
 	
 	@BeforeSuite
-	public static void init() throws IOException{ 
+	public static void init() throws IOException, InterruptedException{ 
 	if(driver==null){
        
 		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\src\\DD_Properties\\Config.Properties");
@@ -79,9 +79,9 @@ public class Test_Core {
 		
 		
 		//Implicit wait
-
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
 		driver.get(config.getProperty("testurl"));
-		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(80,TimeUnit.SECONDS);	
 	    
 	 }
